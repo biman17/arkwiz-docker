@@ -23,7 +23,7 @@ def get_data(lon, lat):
     
     def download_file(url,local_filename):
         # NOTE the stream=True parameter below
-        with requests.get(url, stream=True) as r:
+        with requests.get(url, stream=True, timeout=30) as r:
             r.raise_for_status()
             with open(local_filename, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=8192): 
