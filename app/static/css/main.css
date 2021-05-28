@@ -1,0 +1,51 @@
+body {
+  font-family: 'Poppins';
+}
+.map {
+    height: 700px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border-color: black;
+  }
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 23px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+.ol-control button { 
+    background-color: rgba(40, 40, 40, 0.8) !important;
+}
+.ol-control button:hover { 
+    background-color: rgba(40, 40, 40, 1) !important;
+}
+
+.ol-attribution{
+  background-color: grey;
+}
+
+element.style {
+  width: 68px;
+}
+.ol-scale-line .ol-scale-line-inner {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-top: 0 solid #000;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 0;
+  text-align: center;
+}

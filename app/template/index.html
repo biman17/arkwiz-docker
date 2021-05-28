@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;700&family=Poppins:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <!-- ol-popup -->
+    <link rel="stylesheet" href="https://unpkg.com/ol-popup@4.0.0/src/ol-popup.css">
+    <script src="https://unpkg.com/ol-popup@4.0.0/dist/ol-popup.js"></script>
+    <!-- ol-geocoder -->
+    <link rel="stylesheet" href="https://unpkg.com/ol-geocoder/dist/ol-geocoder.min.css" type="text/css">
+    <script src="https://unpkg.com/ol-geocoder@4.1.2/dist/ol-geocoder.js"></script>
+    <!-- ol-geocoder -->
+    <!-- <link href="dist\node_modules\ol-geocoder\dist\ol-geocoder.min.css" rel="stylesheet"> -->
+    <!-- <script src="dist\node_modules\ol-geocoder\dist\ol-geocoder.js"></script> -->
+    <!-- <script src="dist\node_modules\ol-geocoder\dist\ol-geocoder.js.map"></script> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+   
+<!-- ol-ext -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Viglino/ol-ext/master/dist/ol-ext.min.css" />
+  <script type="text/javascript" src="https://cdn.rawgit.com/Viglino/ol-ext/master/dist/ol-ext.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/viewer.js') }}"></script>
+
+
+    <title>ArkWiz Demo</title>
+  </head>
+
+
+  <body onload="init()">
+    <h1>ARKWIZ PIPELINE TEST [arkwiz.no]</h1>
+    <div id="map_container" class="map">
+      <!-- <form class="example" style="margin:left;max-width:300px;">
+        <input type="text" placeholder="Enter Address.." name="queryString">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form> -->
+    </div><br>
+    <!-- Auto width -->
+    <div id="= lat_long">
+    <p>Selected Coordinates (Lat,Lon): <span id="lat_lon"></span></p>
+    <!-- <a href="google.com" class="button" id = button_download>Pictures of our destinations</a> -->
+    <!-- <div id = 'lat_long'> </div> -->
+    <a id = 'button_download' ><button class="btn" ><i class="fa fa-download" href></i> Download</button></a>
+    </div>
+  </body>
+
+</html>
