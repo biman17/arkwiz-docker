@@ -1,14 +1,12 @@
 FROM osgeo/gdal:ubuntu-small-latest
 
-RUN locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
+
+
+RUN apt-get update 
+RUN apt-get install -y software-properties-common && apt-get update 
+RUN apt-get install -y python3 locales python3-pip && locale-gen en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get update
-RUN apt-get install -y software-properties-common && apt-get update
-RUN apt-get install -y python3
-RUN apt-get install -y python3-pip
 
 # RUN add-apt-repository ppa:ubuntugis/ppa &&  apt-get update
 # RUN apt-get install -y gdal-bin libgdal-dev
