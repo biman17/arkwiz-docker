@@ -22,7 +22,7 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 COPY . /app
-EXPOSE 80
+EXPOSE 5000
 # CMD [ "gunicorn", "-b", "0.0.0.0:8000", "wsgi:app", "--timeout 200", "-w 2" ,"--threads 2" ]
 
 CMD [ "python3 app/app.py" ]
