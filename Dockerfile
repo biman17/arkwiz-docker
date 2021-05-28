@@ -25,4 +25,4 @@ COPY . /app
 EXPOSE 5000
 # CMD [ "gunicorn", "-b", "0.0.0.0:8000", "wsgi:app", "--timeout 200", "-w 2" ,"--threads 2" ]
 
-CMD [ "python3 app/app.py" ]
+CMD [ "sudo python3 app/app.py" ]
