@@ -198,7 +198,7 @@ def get_data(lon, lat):
 
 if __name__ == '__main__':
 #    app.run(debug=True)  # Enable reloader and debugger
-    app.run(host='0.0.0.0',port = 80, debug=False)  # Enable reloader and debugger
+    app.run(host='0.0.0.0',port = 5000, debug=False)  # Enable reloader and debugger
 #    app.run( host='10.61.62.207', port=5443,debug=True)  # Enable reloader and debugger
 
     
